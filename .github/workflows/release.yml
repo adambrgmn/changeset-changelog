@@ -21,8 +21,8 @@ jobs:
         with:
           node-version: 12.x
 
-      - name: Install Dependencies
-        run: yarn
+      - name: Prepare
+        run: yarn && yarn build
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
