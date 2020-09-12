@@ -1,6 +1,9 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@1.3.0/schema.json",
-  "changelog": "../dist/index.js",
+  "changelog": [
+    "../dist/index.js",
+    { "repo": "adambrgmn/changeset-changelog" }
+  ],
   "commit": false,
   "linked": [],
   "access": "public",
