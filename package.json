@@ -20,6 +20,7 @@
   "scripts": {
     "build": "tsc -d src/index.ts --outDir dist",
     "test": "jest",
+    "type-check": "tsc --noEmit",
     "release": "yarn build && yarn changeset publish"
   },
   "dependencies": {
