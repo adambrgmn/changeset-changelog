@@ -1,11 +1,9 @@
 {
   "name": "@fransvilhelm/changeset-changelog",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Changeset changelog generator",
   "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/adambrgmn/changeset-changelog.git"
