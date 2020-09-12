@@ -44,9 +44,7 @@ it('handles single line summaries', async () => {
     options,
   );
 
-  expect(result).toEqual(`
-
-- Change summary (by @adambrgmn in #1)`);
+  expect(result).toEqual('- Change summary (by @adambrgmn in #1)');
 });
 
 it('handles multi line summaries', async () => {
@@ -76,9 +74,7 @@ Comes here`,
     options,
   );
 
-  expect(result).toEqual(`
-
-- First line (by @adambrgmn in #1)
+  expect(result).toEqual(`- First line (by @adambrgmn in #1)
   Rest if the lines
   Comes here`);
 });
@@ -106,9 +102,7 @@ it('handles commits without a user and/or pull request', async () => {
     options,
   );
 
-  expect(result).toEqual(`
-
-- Change summary (by (unknown) in abc123)`);
+  expect(result).toEqual('- Change summary (by (unknown) in abc123)');
 });
 
 it('throws an error if no config is passed', async () => {
