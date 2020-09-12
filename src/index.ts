@@ -25,7 +25,7 @@ const changelogFunctions: ChangelogFunctions = {
 
       let init = `- ${firstLine} ${userInfo}`;
       let rest = summary.map((l) => `  ${l}`).join('\n');
-      return '\n\n' + [init, rest].filter(Boolean).join('\n');
+      return [init, rest].filter(Boolean).join('\n');
     } else {
       return githubChangelogFunctions.getReleaseLine(changeset, _, options);
     }
