@@ -2,7 +2,9 @@
 
 This is a package very similar to
 [`@changeset/changelog-github`](https://github.com/atlassian/changesets/tree/master/packages/changelog-github)
-but with tweaks on how each release line is formatted.
+but with tweaks on how each release line is formatted. The goal is to make the
+changelog inputs look more like they do on the
+[react repository](https://github.com/facebook/react/blob/master/CHANGELOG.md).
 
 While `@changeset/changelog-github` would format a changelog entry something
 like this:
@@ -17,9 +19,7 @@ like this:
 - [summary] (by @adambrgmn in #1)
 ```
 
-See [this projects changelog](CHANGELOG.md) for more detailed examples. The goal
-is to make the changelogs inputs look more like they do on the
-[react repository](https://github.com/facebook/react/blob/master/CHANGELOG.md)
+See [this projects changelog](CHANGELOG.md) for more detailed examples.
 
 ## Installation
 
