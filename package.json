@@ -21,6 +21,7 @@
     "build": "tsc -d src/index.ts --outDir dist",
     "test": "jest",
     "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
     "release": "yarn build && yarn changeset publish"
   },
   "dependencies": {
@@ -56,7 +57,25 @@
     "url": "https://github.com/adambrgmn/changeset-changelog/issues"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "import/order": [
+        "warn",
+        {
+          "newlines-between": "always",
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            [
+              "parent",
+              "sibling",
+              "index"
+            ]
+          ]
+        }
+      ]
+    }
   },
   "husky": {
     "hooks": {

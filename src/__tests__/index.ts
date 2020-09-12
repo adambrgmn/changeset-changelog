@@ -1,5 +1,6 @@
 import * as github from '@changesets/get-github-info';
 import { NewChangesetWithCommit } from '@changesets/types';
+
 import changelogFunction from '../';
 
 jest.mock('@changesets/get-github-info', () => ({ getInfo: jest.fn() }));
