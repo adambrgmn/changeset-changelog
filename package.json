@@ -1,6 +1,6 @@
 {
   "name": "@fransvilhelm/changeset-changelog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Changeset changelog generator",
   "main": "dist/index.js",
   "files": [
