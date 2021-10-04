@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Changeset changelog generator",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/adambrgmn/changeset-changelog.git"
@@ -23,36 +25,36 @@
     "test": "jest",
     "type-check": "tsc --noEmit",
     "lint": "eslint src --ext .ts",
-    "release": "yarn build && yarn changeset publish"
+    "release": "yarn build && yarn changeset publish",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "@changesets/changelog-github": "^0.2.7",
-    "@changesets/get-github-info": "^0.4.4",
-    "@changesets/types": "^3.1.1"
+    "@changesets/changelog-github": "^0.4.1",
+    "@changesets/get-github-info": "^0.5.0",
+    "@changesets/types": "^4.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
-    "@babel/preset-typescript": "^7.10.4",
-    "@changesets/cli": "^2.10.2",
-    "@types/jest": "^26.0.13",
-    "@types/node": "^14.10.1",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@changesets/cli": "^2.17.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.2",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-react-app": "^5.2.1",
-    "eslint-plugin-flowtype": "^4.7.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "husky": "^4.3.0",
-    "jest": "^26.4.2",
-    "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1",
-    "typescript": "^4.0.2"
+    "eslint": "^7.32.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^6.1.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": ">=6",
+    "jest": "^27.2.4",
+    "lint-staged": ">=10",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
   },
   "bugs": {
     "url": "https://github.com/adambrgmn/changeset-changelog/issues"
@@ -78,18 +80,9 @@
       ]
     }
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": [
-      "eslint --fix"
-    ],
-    "*.{js,ts,jsx,tsx,json,md,yml,html}": [
-      "prettier --write"
-    ]
+    "*.{js,ts,jsx,tsx}": "eslint --fix",
+    "*.{js,ts,jsx,tsx,json,md,yml,html}": "prettier --write"
   },
   "prettier": {
     "singleQuote": true,
