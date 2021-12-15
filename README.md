@@ -1,3 +1,5 @@
+**THIS REPO HAS BEEN ARCHIVED. THE CODE FOR THIS PROJECT NOW LIVES IN THE MONOREPO AT [https://github.com/adambrgmn/fransvilhelm](https://github.com/adambrgmn/fransvilhelm)**
+
 # @fransvilhelm/changeset-changelog
 
 This is a package very similar to
